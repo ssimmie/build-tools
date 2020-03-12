@@ -9,7 +9,20 @@
   <name>build-tools</name>
   <description>Build tools</description>
   <properties>
+    <github.user>ssimmie</github.user>
+    <github.repo>todos</github.repo>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <url>https://github.com/${github.user}/${github.repo}</url>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/${github.user}/${github.repo}</url>
+    </repository>
+    <site>
+      <url>${project.url}</url>
+    </site>
+  </distributionManagement>
 </project>
