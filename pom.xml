@@ -25,4 +25,19 @@
       <url>${project.url}</url>
     </site>
   </distributionManagement>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>${project.url}/issues</url>
+  </issueManagement>
+  <scm>
+    <url>${project.url}</url>
+    <connection>scm:git:git@github.com:${github.user}/${github.repo}.git</connection>
+    <developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
+  </scm>
+  <developers>
+    <developer>
+      <name>${github.user}</name>
+      <url>https://github.com/${github.user}</url>
+    </developer>
+  </developers>
 </project>
