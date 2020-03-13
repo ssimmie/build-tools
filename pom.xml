@@ -39,14 +39,23 @@
       <url>${project.url}</url>
     </site>
   </distributionManagement>
-  <issueManagement>
-    <system>GitHub</system>
-    <url>${project.url}/issues</url>
-  </issueManagement>
   <scm>
     <url>${project.url}</url>
     <connection>scm:git:git@github.com:${github.user}/${github.repo}.git</connection>
     <developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>${project.url}/issues</url>
+  </issueManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.0.0-M1</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
