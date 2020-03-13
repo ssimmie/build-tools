@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.ssimmie</groupId>
   <artifactId>build-tools</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <name>build-tools</name>
-  <description>Build tools</description>
+  <description>Common build tool configurations. Includes custom rules for Checkstyle.</description>
   <properties>
     <github.user>ssimmie</github.user>
     <github.repo>build-tools</github.repo>
@@ -15,6 +16,19 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <url>https://github.com/${github.user}/${github.repo}</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>${project.url}/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>${github.user}</name>
+      <url>https://github.com/${github.user}</url>
+    </developer>
+  </developers>
   <distributionManagement>
     <repository>
       <id>github</id>
@@ -33,11 +47,6 @@
     <url>${project.url}</url>
     <connection>scm:git:git@github.com:${github.user}/${github.repo}.git</connection>
     <developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
-  <developers>
-    <developer>
-      <name>${github.user}</name>
-      <url>https://github.com/${github.user}</url>
-    </developer>
-  </developers>
 </project>
