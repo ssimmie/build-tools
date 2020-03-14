@@ -10,51 +10,50 @@
   <name>build-tools</name>
   <description>Common build tool configurations. Includes custom rules for Checkstyle.</description>
   <properties>
-    <github.user>ssimmie</github.user>
-    <github.repo>build-tools</github.repo>
+    <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-  <url>https://github.com/${github.user}/${github.repo}</url>
+  <url>https://github.com/ssimmie/build-tools</url>
   <licenses>
     <license>
       <name>MIT License</name>
-      <url>${project.url}/blob/master/LICENSE</url>
+      <url>https://github.com/ssimmie/build-tools/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
   <developers>
     <developer>
-      <name>${github.user}</name>
-      <url>https://github.com/${github.user}</url>
+      <name>ssimmie</name>
+      <url>https://github.com/ssimmie</url>
     </developer>
   </developers>
   <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/${github.user}/${github.repo}</url>
+      <url>https://maven.pkg.github.com/ssimmie/build-tools</url>
     </repository>
     <site>
-      <url>${project.url}</url>
+      <url>https://github.com/ssimmie/build-tools</url>
     </site>
   </distributionManagement>
   <scm>
-    <url>${project.url}</url>
-    <connection>scm:git:git@github.com:${github.user}/${github.repo}.git</connection>
-    <developerConnection>scm:git:git@github.com:${github.user}/${github.repo}.git</developerConnection>
+    <url>https://github.com/ssimmie/build-tools</url>
+    <connection>scm:git:git@github.com:ssimmie/build-tools.git</connection>
+    <developerConnection>scm:git:git@github.com:ssimmie/build-tools.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>${project.url}/issues</url>
+    <url>https://github.com/ssimmie/build-tools/issues</url>
   </issueManagement>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>3.0.0-M1</version>
+        <version>${maven-release-plugin.version}</version>
       </plugin>
     </plugins>
   </build>
