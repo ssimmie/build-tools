@@ -26,8 +26,10 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: maven build
-      - run: ./mvnw -B package
-      - run: mkdir staging && cp target/*.jar staging
+        run: ./mvnw -B package
+
+      - name: create staging
+        run: mkdir staging && cp target/*.jar staging
 
       - name: upload artifact
         uses: actions/upload-artifact@v1
