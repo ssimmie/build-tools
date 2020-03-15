@@ -1,10 +1,11 @@
-name: ci
+name: pr
+
 on:
-  push:
+  pull_request:
     branches:
       - master
 jobs:
-  ci:
+  pr:
 
     runs-on: ubuntu-latest
 
@@ -26,15 +27,4 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: maven build
-        run: ./mvnw -B package
-
-      - name: upload artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: artifacts
-          path: target
-
-      - name: maven deploy
-        run: ./mvnw -B deploy
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        run: ./mvnw -B verify
