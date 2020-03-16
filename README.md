@@ -45,7 +45,7 @@ Include dependency in your pom:
         <artifactId>build-tools</artifactId>
         <version>20200316.04375ea</version>
       </dependency>
-    <dependencies>
+    </dependencies>
   </dependencyManagement>
 ```
 
