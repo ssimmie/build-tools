@@ -4,7 +4,7 @@
 
 ## Usage
 
-Add this private repository to your projects pom.
+Add this private repository to your projects pom. All private dependencies are available https://ssimmie.github.io/maven-repository/.
 
 ```xml
 <repositories>
