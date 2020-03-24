@@ -4,14 +4,14 @@
 
 ## Usage
 
-Add this private repository to your projects pom. All private dependencies are available https://ssimmie.github.io/maven-repository/.
+Add this private repository to your projects pom. All private dependencies are available https://ssimmie.github.io/artifact-repository/.
 
 ```xml
 <repositories>
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/ssimmie/maven-repository</url>
+      <url>https://maven.pkg.github.com/ssimmie/artifact-repository</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -24,7 +24,7 @@ Add this private repository to your projects pom. All private dependencies are a
     <pluginRepository>
         <id>github</id>
         <name>GitHub Apache Maven Packages</name>
-        <url>https://maven.pkg.github.com/ssimmie/maven-repository</url>
+        <url>https://maven.pkg.github.com/ssimmie/artifact-repository</url>
         <releases>
           <enabled>true</enabled>
         </releases>
