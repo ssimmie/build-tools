@@ -32,7 +32,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/ssimmie/maven-repository</url>
+      <url>https://maven.pkg.github.com/ssimmie/artifact-repository</url>
     </repository>
     <site>
       <url>https://github.com/ssimmie/build-tools</url>
