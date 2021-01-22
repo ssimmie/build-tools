@@ -4,7 +4,7 @@
 
 ## Usage
 
-Add this private repository to your projects pom. All private dependencies are available https://ssimmie.github.io/artifact-repository/.
+Add repositories:
 
 ```xml
 <repositories>
@@ -35,7 +35,7 @@ Add this private repository to your projects pom. All private dependencies are a
   </pluginRepositories>
 ```
 
-Include dependency in your pom:
+Add dependency:
 
 ```xml
   <dependencyManagement>
@@ -48,6 +48,8 @@ Include dependency in your pom:
     </dependencies>
   </dependencyManagement>
 ```
+
+Configure plugins:
 
 ```xml
 <build>
